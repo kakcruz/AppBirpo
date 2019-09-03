@@ -9,7 +9,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:fitsSystemWindows="false">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -27,47 +28,55 @@
             <EditText
                 android:layout_width="350dp"
                 android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="50dp"
-                android:paddingLeft="10dp"
+                android:background="@drawable/retangulo"
                 android:hint="Username"
                 android:inputType="textPersonName"
+                android:paddingLeft="10dp"
                 android:textColor="@color/colorTexto"
-                android:textSize="20dp"
-                android:layout_marginLeft="10dp"
                 android:textColorHint=""
-                android:background="@drawable/retangulo"/>
+                android:textSize="20dp" />
 
             <EditText
                 android:layout_width="350dp"
                 android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/retangulo"
                 android:hint="Password"
                 android:inputType="textPassword"
-                android:textColor="@color/colorTexto"
-                android:textSize="20dp"
                 android:paddingLeft="10dp"
-                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorTexto"
                 android:textColorHint=""
-                android:layout_marginTop="10dp"
-                android:background="@drawable/retangulo" />
+                android:textSize="20dp" />
 
             <Button
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Login"
-                android:background="@drawable/botao"
-                android:layout_marginTop="20dp"
                 android:layout_marginLeft="130dp"
-                android:textColor="@color/colorName"/>
+                android:layout_marginTop="20dp"
+                android:background="@drawable/botao"
+                android:text="Login"
+                android:textColor="@color/colorName" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="15dp"
+                android:text="Forgot password?"
+                android:textColor="@color/colorBotao" />
 
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Forgot Password?"
-                android:textColor=""
-                android:layout_marginTop="110dp"
-                android:layout_marginLeft="100dp"
-                android:drawableLeft=""/>
+                android:layout_marginLeft="248dp"
+                android:layout_marginTop="40dp"
+                android:text="Create an account?"
+                android:textColor="@color/colorBotao" />
+
 
         </LinearLayout>
 
